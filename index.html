@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <div id="main">
+        <nav id="navbar">
+            <div id="left-nav">
+                <div id="left-nav-elem1">
+                    <i class="ri-sun-line"></i>
+                    <h3>Weather Info.</h3>
+                </div>
+                <div id="left-nav-elem2">
+                    <i class="fi fi-tr-marker"></i>
+                    <h4 >Weather in <span class="city-name"></span></h4>
+                </div>
+            </div>
+            <div id="right-nav">
+                <div id="right-nav-elem1">
+                    <i class="ri-search-line searchIcon"></i>
+                    <input type="text" placeholder="enter your city name..">
+                    <button id="searchBtn">Search</i></button>
+                </div>
+                <div id="right-nav-elem2">
+                    <h4><span id="celcius">°C</span> | °F</h4>
+                    <button id="menu-btn"><i  class="ri-menu-4-line menu-Button"></i></button>
+                </div>
+            </div>
+            <div id="sidebar">
+                <i class="ri-close-large-line closeSidebar"></i>
+                <div id="sidebar-upper">
+                    <div id="account">
+                        <i class="ri-account-circle-line"></i>
+                        <h4>User</h4>
+                    </div>
+                    <div id="dashboard">
+                        <i class="ri-dashboard-line"></i>
+                        <h4>Dashboard</h4>
+                    </div>
+                </div>
+
+                <div id="sidebar-two">
+                    <a href="">Help</a><a href="">Feedback</a><br><a href="">About Us</a><a href="">Weather News</a><br><a href="">Terms of use</a><a href="">Privacy</a>
+                </div>
+                <div id="sidebar-three">
+                    <a href=""><i class="ri-instagram-line"></i></a>
+                    <a href="https://github.com/sagarM20" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/sagar-mitra-6b54572a4/" target="_blank"><i class="ri-linkedin-fill" ></i></a>
+                </div>
+                <div id="sidebar-four">
+                    <h5>Developed and designed with 💗 Sagar.M</h5>
+                </div>
+            </div>
+        </nav>
+
+        <div id="container">
+
+            <div id="container-left">
+                <div id="con-left-one">
+                    <img id="weather-icon" src="" alt="">
+                    <p id="weather-type"></p>
+                    
+                    
+                </div>
+                <div id="con-left-two">
+                    <h3><span id="date-time"></span></h3>
+                    <h1 id="temp"></h1>
+                    <p id="temp-feel"></p>
+                </div>
+            </div>
+            <div id="container-right">
+                <div id="con-right-upper">
+                    <div class="card">
+                        <h2>Humidity</h2>
+                        <img src="Images/humidity.svg" alt="humidity icon">
+                        <h3 id="humi"></h3>
+                    </div>
+                    <div class="card">
+                        <h2>Wind Speed</h2>
+                        <img src="Images/wind speed.svg" alt="humidity icon">
+                        <h3 id="wSpeed"></h3>
+                    </div>
+                </div>
+                <div id="con-right-lower">
+                    <div class="card">
+                        <h2>Coordinates</h2>
+                        <img src="https://www.svgrepo.com/show/278415/map-location.svg" alt="humidity icon">
+                        <h3 id="coordi"></h3>
+                    </div>
+                    <div class="card">
+                        <h2>Pressure</h2>
+                        <img src="Images/pressure.png" alt="pressure">
+                        <h3 id="pressure"></h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+<script src="script.js"></script>    
+</body>
+</html>
